@@ -1,0 +1,1 @@
+import{_ as t,o as i,c as a,ae as e}from"./chunks/framework.Co1PSFSm.js";const c=JSON.parse('{"title":"附件与 API 参考","description":"","frontmatter":{},"headers":[],"relativePath":"zh/api.md","filePath":"zh/api.md"}'),n={name:"zh/api.md"};function d(h,s,o,l,p,r){return i(),a("div",null,[...s[0]||(s[0]=[e("",57)])])}const E=t(n,[["render",d]]);export{c as __pageData,E as default};
