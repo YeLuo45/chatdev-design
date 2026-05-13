@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "ChatDev 2.0 文档",
   description: "DevAll - 零代码多智能体编排平台",
+  base: '/chatdev-design/',
   lang: "zh-CN",
 
   head: [
