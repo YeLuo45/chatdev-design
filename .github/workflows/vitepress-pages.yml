@@ -5,7 +5,10 @@ on:
     branches:
       - main
     paths:
-      - 'docs-site/**'
+      - '.vitepress/**'
+      - 'zh/**'
+      - 'package.json'
+      - '.github/workflows/vitepress-pages.yml'
   workflow_dispatch:
 
 jobs:
@@ -26,16 +29,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install --prefer-offline
-        working-directory: docs-site
 
       - name: Build VitePress site
         run: npm run build
-        working-directory: docs-site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs-site/.vitepress/dist
+          publish_dir: .vitepress/dist
           publish_branch: gh-pages
           force_orphan: true
